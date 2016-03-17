@@ -2,3 +2,6 @@ Paco: Touch up the game
 Huy: Make background fancy. like super good.
 Victor: Write some plots on top of the game and pretty-fy the text.
 Oscar: uuuuh I'll come up with something.
+
+We can try to add some background music and di-ring sound when the player gets the egg.
+or we can put character selection which ables the player to choose the Yoshi's color.and loading page.
