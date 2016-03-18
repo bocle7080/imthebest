@@ -66,9 +66,9 @@ var update = function (modifier) {
 
 	if (
 		hero.x <= (monster.x + 14)
-		&& monster.x <= (hero.x + 40)
+		&& monster.x <= (hero.x + 14)
 		&& hero.y <= (monster.y + 16)
-		&& monster.y <= (hero.y + 40)
+		&& monster.y <= (hero.y + 16)
 	) {
 		++monstersCaught;
 		reset();
