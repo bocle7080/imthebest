@@ -17,7 +17,14 @@ var heroImage = new Image();
 heroImage.onload = function () {
 	heroReady = true;
 };
-heroImage.src = "img/yoshi.gif";
+
+var local_yoshi = localStorage.getItem("yoshi");
+
+if (local_yoshi) {
+	heroImage.src = "img/" + local_yoshi;
+} else {
+	heroImage.src = "img/yoshi.gif";
+}
 
 var monsterReady = false;
 var monsterImage = new Image();
@@ -72,6 +79,7 @@ var update = function (modifier) {
 	) {
 		++monstersCaught;
 		reset();
+		document.getElementById('audioplay').play();
 	}
 };
 
@@ -113,3 +121,8 @@ requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame
 var then = Date.now();
 reset();
 main();
+
+function changeImg(src) {
+	localStorage.setItem('yoshi',src);
+	location.reload(true);
+}

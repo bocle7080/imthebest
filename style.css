@@ -8,6 +8,20 @@ h1{
 h3{
 	color: white;
 }
+#imgs {
+  position:absolute;
+  top:50px;
+  left:100px;
+  width:80px;
+}
+
+#imgs img {
+  border:none;
+  width:80px;
+  height:80px;
+  margin-top:50px;
+  cursor:pointer;
+}
 @keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
