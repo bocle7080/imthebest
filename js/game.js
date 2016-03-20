@@ -1,4 +1,3 @@
-
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
 canvas.width = 512;
@@ -31,7 +30,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
 	monsterReady = true;
 };
-monsterImage.src = "img/yoshiegg.gif";
+monsterImage.src = "img/yoshi-egg2.0.png";
 
 var hero = {
 	speed: 256
@@ -78,6 +77,11 @@ var update = function (modifier) {
 		&& monster.y <= (hero.y + 32)
 	) {
 		++monstersCaught;
+		console.log(monster.x)
+		console.log(monster.y)
+		console.log(hero.x)
+		console.log(hero.y)
+
 		reset();
 		document.getElementById('audioplay').play();
 	}
