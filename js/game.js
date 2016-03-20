@@ -71,6 +71,11 @@ var update = function (modifier) {
 		&& monster.y <= (hero.y + 40)
 	) {
 		++monstersCaught;
+		console.log(monster.x)
+		console.log(monster.y)
+		console.log(hero.x)
+		console.log(hero.y)
+
 		reset();
 	}
 };
