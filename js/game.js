@@ -52,8 +52,8 @@ var reset = function () {
 	hero.x = canvas.width / 2;
 	hero.y = canvas.height / 2;
 
-	monster.x = 32 + (Math.random() * (canvas.width - 64));
-	monster.y = 32 + (Math.random() * (canvas.height - 64));
+	monster.x = 10 + (Math.random() * (canvas.width - 68));
+	monster.y = 10 + (Math.random() * (canvas.height - 80));
 };
 
 var update = function (modifier) {
@@ -71,10 +71,10 @@ var update = function (modifier) {
 	}
 
 	if (
-		hero.x <= (monster.x + 32)
-		&& monster.x <= (hero.x + 32)
-		&& hero.y <= (monster.y + 32)
-		&& monster.y <= (hero.y + 32)
+		hero.x <= (monster.x + 72)
+		&& monster.x <= (hero.x + 80)
+		&& hero.y <= (monster.y + 72)
+		&& monster.y <= (hero.y + 80)
 	) {
 		++monstersCaught;
 		console.log(monster.x)
