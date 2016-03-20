@@ -24,7 +24,7 @@ var monsterImage = new Image();
 monsterImage.onload = function () {
 	monsterReady = true;
 };
-monsterImage.src = "img/yoshiegg.gif";
+monsterImage.src = "img/yoshi-egg2.0.png";
 
 var hero = {
 	speed: 256
