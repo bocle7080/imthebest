@@ -22,7 +22,7 @@ var local_yoshi = localStorage.getItem("yoshi");
 if (local_yoshi) {
 	heroImage.src = "img/" + local_yoshi;
 } else {
-	heroImage.src = "img/yoshi.gif";
+	heroImage.src = "img/greenyoshi.png";
 }
 
 var monsterReady = false;
